@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <!-- Google Fonts --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Hoja de estilos --> 
+    <link rel="stylesheet" href="src/css/styles.css"> 
+
+    <title>Index</title> 
+</head>
+<body>
+    <section class="main-container">
+        <div class="card-image">
+            <img src="" id="pokemon-img" alt="Pokemon">           
+        </div>
+
+           <h1 id="pokemon-name">Nombre</h1>         
+           <p id="pokemon-id">ID</p>          
+
+        <div class="types">
+           <h1 id="pokemon-types">Tipos</h1>          
+        </div>
+
+        <div class="buttons">
+            <button id="prev">Anterior</button>
+            <button id="next">Siguiente</button>
+        </div>
+
+        
+    </section>
+
+    <script type="module" src="./src/main.js">
+    </script>
+
+<!--RETO MODAL-->
+<div id="pokemon-modal" class="modal hidden">
+    <div class="modal-content">
+        <span id="close-modal">&times; </span>
+        <h2 id="modal-name"></h2>
+        <img id="modal-img" src="" alt="pokemon grande">
+
+        <p id="modal-id" class="pokemon-id"></p>
+
+        <div class="modal-info">
+            <p><strong>Altura :</strong> <span id="modal-height"></span> m</p>
+            <p><strong>Peso :</strong> <span id="modal-weight"></span> kg</p>
+            <p><strong>Habilidades :</strong> <span id="modal-abilities"></span></p>
+        </div>
+
+        <div id="modal-stats" class="modal-stats"></div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
