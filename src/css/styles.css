@@ -1,3 +1,193 @@
+.bg-type-normal { background-color: #bdbdbd !important; color: #222 !important; }
+.bg-type-electric { background-color: #f7d02c !important; color: #222 !important; }
+.bg-type-fire { background-color: #ee8130 !important; color: #fff !important; }
+.bg-type-water { background-color: #6390f0 !important; color: #fff !important; }
+.bg-type-grass { background-color: #7ac74c !important; color: #222 !important; }
+.bg-type-bug { background-color: #729f3f !important; color: #fff !important; }
+.bg-type-flying { background-color: #3dc7ef !important; color: #222 !important; }
+.bg-type-poison { background-color: #9be9ff !important; color: #222 !important; }
+.bg-type-fairy { background-color: #ff87db !important; color: #222 !important; }
+.bg-type-ground { background-color: #833900 !important; color: #fff !important; }
+.bg-type-ice { background-color: #9be9ff !important; color: #222 !important; }
+.bg-type-rock { background-color: #e9d45f !important; color: #222 !important; }
+.bg-type-fighting { background-color: #d33333 !important; color: #fff !important; }
+.bg-type-psychic { background-color: #aa0080 !important; color: #fff !important; }
+.bg-type-steel { background-color: #616161 !important; color: #fff !important; }
+.bg-type-ghost { background-color: #313d70 !important; color: #fff !important; }
+.bg-type-dark { background-color: #222222 !important; color: #fff !important; }
+.bg-type-dragon { background-color: #3f23bb !important; color: #fff !important; }
+/* Recuadros de atributos con borde de color según tipo */
+.attr-box {
+    display: inline-block;
+    padding: 4px 12px;
+    margin-left: 6px;
+    border-radius: 10px;
+    font-weight: 600;
+    background: #fff;
+    border: 3px solid #ccc;
+    min-width: 40px;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+/* Bordes por tipo */
+.border-type-normal { border-color: #bdbdbd !important; }
+.border-type-electric { border-color: #f7d02c !important; }
+.border-type-fire { border-color: #ee8130 !important; }
+.border-type-water { border-color: #6390f0 !important; }
+.border-type-grass { border-color: #7ac74c !important; }
+.border-type-bug { border-color: #729f3f !important; }
+.border-type-flying { border-color: #3dc7ef !important; }
+.border-type-poison { border-color: #9be9ff !important; }
+.border-type-fairy { border-color: #ff87db !important; }
+.border-type-ground { border-color: #833900 !important; }
+.border-type-ice { border-color: #9be9ff !important; }
+.border-type-rock { border-color: #e9d45f !important; }
+.border-type-fighting { border-color: #d33333 !important; }
+.border-type-psychic { border-color: #aa0080 !important; }
+.border-type-steel { border-color: #616161 !important; }
+.border-type-ghost { border-color: #313d70 !important; }
+.border-type-dark { border-color: #222222 !important; }
+.border-type-dragon { border-color: #3f23bb !important; }
+/* Fondos dinámicos tipo cómic para cada tipo de Pokémon */
+.bg-type {
+    min-height: 100vh;
+    width: 100vw;
+    transition: background 0.5s;
+}
+
+.bg-normal {
+    background-color: #bdbdbd;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.477) 2px, transparent 2.5px);
+    background-size: 24px 24px;
+}
+.bg-electric {
+    background-color: #f7d02c;
+    background-image: radial-gradient(rgb(255, 255, 0) 2px, transparent 2.5px);
+    background-size: 24px 24px;
+}
+.bg-fire {
+    background-color: #ee8130;
+    background-image: radial-gradient(rgba(201, 67, 5, 0.799) 2px, transparent 2.5px);
+    background-size: 24px 24px;
+}
+.bg-water {
+    background-color: #6390f0;
+    background-image: radial-gradient(rgba(2, 55, 169, 0.54) 2px, transparent 2.5px);
+    background-size: 24px 24px;
+}
+.bg-grass {
+    background-color: #7ac74c;
+    background-image: radial-gradient(rgba(0, 255, 0, 0.642) 2px, transparent 2.5px);
+    background-size: 24px 24px;
+}
+.bg-bug {
+    background-color: #729f3f;
+    background-image: radial-gradient(rgba(100, 200, 0, 0.544) 2px, transparent 2.5px);
+    background-size: 24px 24px;
+}
+.bg-flying {
+    background-color: #3dc7ef;
+    background-image: radial-gradient(rgba(0, 200, 255, 0.438) 2px, transparent 2.5px);
+    background-size: 24px 24px;
+}
+.bg-poison {
+    background-color: #9be9ff;
+    background-image: radial-gradient(rgba(0, 255, 255, 0.586) 2px, transparent 2.5px);
+    background-size: 24px 24px;
+}
+.bg-fairy {
+    background-color: #ff87db;
+    background-image: radial-gradient(rgba(217, 1, 170, 0.437) 2px, transparent 2.5px);
+    background-size: 24px 24px;
+}
+.bg-ground {
+    background-color: #833900;
+    background-image: radial-gradient(rgba(150, 80, 0, 0.464) 2px, transparent 2.5px);
+    background-size: 24px 24px;
+}
+
+.bg-ice {
+    background-color: #9be9ff;
+    background-image: radial-gradient(rgba(11, 159, 159, 0.586) 2px, transparent 2.5px);
+    background-size: 24px 24px;
+}
+.bg-rock {
+    background-color: #e9d45f;
+    background-image: radial-gradient(rgba(200, 200, 0, 0.627) 2px, transparent 2.5px);
+    background-size: 24px 24px;
+}
+.bg-fighting {
+    background-color: #d33333;
+    background-image: radial-gradient(rgba(200, 0, 0, 0.467) 2px, transparent 2.5px);
+    background-size: 24px 24px;
+}
+.bg-psychic {
+    background-color: #aa0080;
+    background-image: radial-gradient(rgba(200, 0, 200, 0.33) 2px, transparent 2.5px);
+    background-size: 24px 24px;
+}
+.bg-steel {
+    background-color: #616161;
+    background-image: radial-gradient(rgba(100,100,100,0.13) 2px, transparent 2.5px);
+    background-size: 24px 24px;
+}
+.bg-ghost {
+    background-color: #313d70;
+    background-image: radial-gradient(rgba(11, 11, 85, 0.792) 2px, transparent 2.5px);
+    background-size: 24px 24px;
+}
+.bg-dark {
+    background-color: #222222;
+    background-image: radial-gradient(rgba(0,0,0,0.18) 2px, transparent 2.5px);
+    background-size: 24px 24px;
+}
+.bg-dragon {
+    background-color: #3f23bb;
+    background-image: radial-gradient(rgba(35, 1, 109, 0.274) 2px, transparent 2.5px);
+    background-size: 24px 24px;
+}
+/* Centrado del contenido principal */
+.main-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Barra de filtros */
+.filter-bar {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#type-filter {
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background-color 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+#type-filter:focus, #type-filter:hover {
+    border-color: #0056b3;
+    box-shadow: 0 4px 16px rgba(0,123,255,0.12);
+}
+
+#type-filter option {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 8px 0;
+}
 body {
     margin: 0;
     padding: 0;
@@ -5,40 +195,173 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Quicksand', sans-serif;
 }
 
+.app-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px; /* Adjust width to accommodate buttons */
+}
 
-.main-container {
-
+.card {
    width: 400px;
    height: 500px;
     background-color: white;
     border-radius: 12px; 
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+    box-shadow: 0 12px 48px 0 rgba(0,0,0,0.45), 0 2px 16px 0 rgba(0,0,0,0.25); 
     text-align: center;
-    
+    padding: 20px;
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s;
+    position: relative;
 }
 
-.main-container img {
+/* Efecto de escáner */
+.scanner-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, rgba(0,255,0,0.2) 0%, rgba(0,255,0,0.7) 50%, rgba(0,255,0,0.2) 100%);
+    box-shadow: 0 0 16px 4px rgba(0,255,0,0.4);
+    border-radius: 4px;
+    opacity: 0.85;
+    z-index: 10;
+    animation: scanner-move 1.5s cubic-bezier(0.4,0,0.2,1) 1;
+}
+
+@keyframes scanner-move {
+    0% {
+        top: 0;
+        opacity: 0.7;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.fade-in {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.card img {
     margin-top: 50px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     margin-bottom: 20px;
-     box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.4,1.5,0.5,1), box-shadow 0.3s cubic-bezier(0.4,1.5,0.5,1);
+    position: relative;
+    z-index: 2;
 }
 
+.card img:hover {
+    transform: scale(1.18) translateY(-30px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+}
 
-
-.buttons{
-    margin-top: 10px;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 8px;
-    background-color: #007BFF;
+#prev, #next, #type-filter, #clear-filter {
+    padding: 12px 20px;
+    border: solid 2px white;
+    border-radius: 50px;
     color: white;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
 }
+
+/* Colores oscuros para cada tipo de botón */
+.btn-type-normal { background-color: #888888; }
+.btn-type-electric { background-color: #bba600; }
+.btn-type-fire { background-color: #b35a00 ; }
+.btn-type-water { background-color: #254b8c;  }
+.btn-type-grass { background-color: #406d1a;  }
+.btn-type-bug { background-color: #4d6b23;}
+.btn-type-flying { background-color: #1a6b8c ; }
+.btn-type-poison { background-color: #3a6b6b ; }
+.btn-type-fairy { background-color: #b04a8a; }
+.btn-type-ground { background-color: #4d2300; }
+.btn-type-ice { background-color: #0daaaf6f;}
+.btn-type-rock { background-color: #b3a200 ; }
+.btn-type-fighting { background-color: #8c1a1a; }
+.btn-type-psychic { background-color: #6b0052 ; }
+.btn-type-steel { background-color: #333333; }
+.btn-type-ghost { background-color: #181c3a; }
+.btn-type-dark { background-color: #000000 ; }
+.btn-type-dragon { background-color: #1a1166; }
+
+#prev {
+    margin-right: 20px;
+}
+
+#next {
+    margin-left: 20px;
+}
+#prev {
+    margin-right: 20px;
+}
+
+#next {
+    margin-left: 20px;
+}
+
+.type.normal { background-color: #bdbdbd; color: #000;}
+.type.electric { background-color: #f7d02c; color: #000; }
+.type.fire { background-color: #ee8130;}
+.type.ground { background-color: #833900; }
+.type.ice { background-color: #9be9ff; color: #000; }
+.type.rock { background-color: #e9d45f; }
+.type.water { background-color: #6390f0; }
+.type.grass { background-color: #7ac74c; }
+.type.bug { background-color: #729f3f; }
+.type.flying { background-color: #3dc7ef; } 
+.type.poison { background-color: #9be9ff; color: #000; }
+.type.fairy { background-color: #ff87db;}
+.type.fighting { background-color: #d33333; }
+.type.psychic { background-color: #aa0080; }
+.type.steel { background-color: #616161; }
+.type.ghost { background-color: #313d70; }
+.type.dark { background-color: #222222; }
+.type.dragon { background-color: #3f23bb; }
+
+/* Estilo general para los recuadros de los tipos */
+.type {
+    display: inline-block;
+    padding: 6px 16px;
+    margin: 4px 6px 0 0;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    border: 2px solid rgba(0,0,0,0.08);
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    transition: transform 0.15s;
+}
+
+.type:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.16);
+}
+
 
 .modal {
     display: none; 
@@ -50,4 +373,127 @@ body {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+}
+
+#close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#close-modal:hover,
+#close-modal:focus {
+    color: black;
+}
+
+#modal-name {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#modal-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#modal-id {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.modal-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.modal-info p {
+    margin: 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.modal-stats {
+    margin-top: 20px;
+}
+
+.modal-stats h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.modal-stats span {
+    display: block;
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* Barras de estado para estadísticas */
+.stat-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    gap: 10px;
+}
+.stat-label {
+    min-width: 110px;
+    font-size: 0.95em;
+    color: #333;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-right: 8px;
+    background: #eee;
+    transition: background 0.3s, color 0.3s;
+}
+.stat-bar-wrapper {
+    flex: 1;
+    background: #e0e0e0;
+    border-radius: 8px;
+    height: 18px;
+    overflow: hidden;
+    position: relative;
+}
+.stat-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #4caf50 60%, #81c784 100%);
+    border-radius: 8px 0 0 8px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 8px;
+    transition: width 0.5s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
 }

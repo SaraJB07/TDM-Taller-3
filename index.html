@@ -15,26 +15,31 @@
 
     <title>Index</title> 
 </head>
-<body>
-    <section class="main-container">
-        <div class="card-image">
-            <img src="" id="pokemon-img" alt="Pokemon">           
+<body class="bg-type">
+    <div class="main-center">
+        <div class="filter-bar">
+            <select id="type-filter">
+                <option value="">Todos los tipos</option>
+                <!-- Opciones de tipos se llenan por JS -->
+            </select>
+            <button id="clear-filter">Quitar filtro</button>
         </div>
+        <div class="app-container">
+        <button id="prev">Anterior</button>
+        <div class="card">
+            <div class="card-image">
+                <img src="" id="pokemon-img" alt="Pokemon">           
+            </div>
 
-           <h1 id="pokemon-name">Nombre</h1>         
-           <p id="pokemon-id">ID</p>          
+               <h1 id="pokemon-name">Nombre</h1>         
+               <p id="pokemon-id">ID</p>          
 
-        <div class="types">
-           <h1 id="pokemon-types">Tipos</h1>          
+            <div class="types">
+               <h1 id="pokemon-types">Tipos</h1>          
+            </div>
         </div>
-
-        <div class="buttons">
-            <button id="prev">Anterior</button>
-            <button id="next">Siguiente</button>
-        </div>
-
-        
-    </section>
+        <button id="next">Siguiente</button>
+    </div>
 
     <script type="module" src="./src/main.js">
     </script>
@@ -49,9 +54,9 @@
         <p id="modal-id" class="pokemon-id"></p>
 
         <div class="modal-info">
-            <p><strong>Altura :</strong> <span id="modal-height"></span> m</p>
-            <p><strong>Peso :</strong> <span id="modal-weight"></span> kg</p>
-            <p><strong>Habilidades :</strong> <span id="modal-abilities"></span></p>
+            <p><strong>Altura :</strong> <span id="modal-height" class="attr-box"></span></p>
+            <p><strong>Peso :</strong> <span id="modal-weight" class="attr-box"></span></p>
+            <p><strong>Habilidades :</strong> <span id="modal-abilities" class="attr-box"></span></p>
         </div>
 
         <div id="modal-stats" class="modal-stats"></div>
