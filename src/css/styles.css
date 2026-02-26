@@ -1,3 +1,5 @@
+/* COLORES DE FONDO Y TEXTO POR TIPO */
+
 .bg-type-normal { background-color: #bdbdbd !important; color: #222 !important; }
 .bg-type-electric { background-color: #f7d02c !important; color: #222 !important; }
 .bg-type-fire { background-color: #ee8130 !important; color: #fff !important; }
@@ -176,6 +178,8 @@
     cursor: pointer;
 }
 
+/* # selecciona un elemento por su id*/
+
 #type-filter:focus, #type-filter:hover {
     border-color: #0056b3;
     box-shadow: 0 4px 16px rgba(0,123,255,0.12);
@@ -197,6 +201,9 @@ body {
     align-items: center;
     font-family: 'Quicksand', sans-serif;
 }
+
+
+ /* CONTENEDOR PRINCIPAL */
 
 .app-container {
     display: flex;
@@ -249,6 +256,8 @@ body {
     }
 }
 
+ /* ANIMACIONES DE ENTRADA Y SALIDA DE TARJETAS */
+
 .fade-out {
     opacity: 0;
     transform: scale(0.9);
@@ -258,6 +267,8 @@ body {
     opacity: 1;
     transform: scale(1);
 }
+
+  /* IMAGEN DEL POKÉMON */
 
 .card img {
     margin-top: 50px;
@@ -276,6 +287,8 @@ body {
     transform: scale(1.18) translateY(-30px);
     box-shadow: 0 12px 32px rgba(0,0,0,0.18);
 }
+
+ /* BOTONES DE NAVEGACIÓN Y FILTRO */
 
 #prev, #next, #type-filter, #clear-filter {
     padding: 12px 20px;
@@ -362,6 +375,7 @@ body {
     box-shadow: 0 4px 16px rgba(0,0,0,0.16);
 }
 
+/* INFORMACIÓN DEL POKÉMON  */
 
 .modal {
     display: none; 
@@ -387,6 +401,8 @@ body {
     text-align: center;
     position: relative;
 }
+
+/* el botón de cierre de la ventana X */
 
 #close-modal {
     position: absolute;
@@ -443,6 +459,8 @@ body {
     margin-top: 20px;
 }
 
+ /* ESTADÍSTICAS DEL POKÉMON - BARRITAS  */
+
 .modal-stats h3 {
     margin-bottom: 10px;
     color: #333;
@@ -458,6 +476,8 @@ body {
 }
 
 /* Barras de estado para estadísticas */
+
+
 .stat-row {
     display: flex;
     align-items: center;
